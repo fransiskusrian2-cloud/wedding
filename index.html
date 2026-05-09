@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Yanto & Ega — Undangan Nikah</title>
+<meta name="description" content="A premium wedding invitation for Yanto & Ega — 14 February 2026." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- OPEN INVITATION -->
+<div id="openOverlay">
+  <div class="ornament">— PERNIKAHAN —</div>
+  <h1><span class="gold">Yanto</span><span class="amp">&amp;</span><span class="gold">Ega</span></h1>
+  <p>Kami mengundang Anda untuk merayakan cinta kami</p>
+  <button class="open-btn" id="openBtn">Buka Undangan</button>
+</div>
+
+<!-- NAV -->
+<nav class="bar">
+  <div class="brand">Y &nbsp;&amp;&nbsp; E</div>
+  <ul>
+    <li><a href="#hero" data-link>Beranda</a></li>
+    <li><a href="#gallery" data-link>Galeri</a></li>
+    <li><a href="#contact" data-link>Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="reveal" style="position:relative">
+    <div class="ornament">— CINTA MEMPERSATUKAN —</div>
+    <h1><span class="gold">Yanto</span><span class="amp">&amp;</span><span class="gold">Ega</span></h1>
+    <div class="date">20 · Des · 2026</div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section id="countdown">
+  <div class="reveal">
+  <div class="eyebrow">MENGHITUNG MOMEN</div>
+  <h2 class="title">Sampai Kita Mengucap <span class="gold serif" style="font-style:italic;font-weight:400">Iya</span></h2>
+    <div class="divider">✦</div>
+    <div class="countdown">
+      <div class="cd-cell"><div class="cd-num" id="cd-d">00</div><div class="cd-lbl">Days</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cd-h">00</div><div class="cd-lbl">Hours</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl">Minutes</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl">Seconds</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="reveal">
+    <div class="eyebrow">PERJALANAN KAMI</div>
+    <h2 class="title">Momen <span class="gold serif" style="font-style:italic;font-weight:400">Bersama</span></h2>
+    <div class="divider">✦</div>
+    <div class="gallery" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+  <div class="reveal">
+    <div class="eyebrow">SINEMATIS</div>
+    <h2 class="title">Kisah <span class="gold serif" style="font-style:italic;font-weight:400">Kami</span></h2>
+    <div class="divider">✦</div>
+    <div class="video-wrap">
+      <video id="story" preload="metadata" playsinline poster="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=1400&q=80">
+        <source src="https://cdn.coverr.co/videos/coverr-a-couple-in-love-on-the-beach-2633/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="play" id="playOverlay">
+        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="reveal">
+    <div class="eyebrow">BERGABUNGLAH DENGAN KAMI DI</div>
+    <h2 class="title">Tempat <span class="gold serif" style="font-style:italic;font-weight:400">Acara</span></h2>
+    <div class="divider">✦</div>
+    <div class="loc-card">
+      <h3>Hotel Aston Kupang</h3>
+      <p>Jl.Terusan Timor Raya No.142, Kelapa Lima,  Kec. Kelapa Lima,<br/>Kota Kupang, Nusa Tenggara Timur</p>
+      <p style="margin-top:14px;font-style:italic">Senin, 20 December 2026 · 6:00 WITA</p>
+      <a class="gold-btn" id="mapsBtn" href="https://maps.app.goo.gl/bW1kseYt1AbtVzR97?g_st=aw" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a8 8 0 0 0-8 8c0 5.5 8 12 8 12s8-6.5 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+        Buka di Peta
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <div class="eyebrow">Informasi Lainnya &amp; PERTANYAAN</div>
+    <h2 class="title">Hubungi <span class="gold serif" style="font-style:italic;font-weight:400">Kami</span></h2>
+    <div class="divider">✦</div>
+    <div class="contact-grid">
+      <div class="c-card">
+        <div class="role">Keluarga Pengantin Laki-laki</div>
+        <div class="name">Bapak. Rajesh Kapoor</div>
+        <a href="https://wa.me/6281220290096" target="_blank" rel="noopener">0812 2029 0096</a>
+        <div class="name">Ibu. Odetha Maun</div>
+        <a href="https://wa.me/6282156743352" target="_blank" rel="noopener">0821 5674 3352</a>
+      </div>
+      <div class="c-card">
+        <div class="role">Keluarga Pengantin Perempuan</div>
+        <div class="name">Bapak. Vikram Mehta</div>
+        <a href="https://wa.me/628233121233" target="_blank" rel="noopener">082 3312 1233</a>
+        <div class="name">Ibu. Maria Stun</div>
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">0812 3456 7890</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="mono">— DENGAN CINTA —</div>
+  <p><span class="gold">Yanto</span> <em style="color:var(--gold-2);font-family:'Cormorant Garamond',serif">&amp;</em> <span class="gold">Ega</span></p>
+  <small>© webker/xaverian · Dibuat dengan cinta</small>
+</footer>
+
+<!-- Music -->
+<audio id="bgm" loop preload="auto">
+  <source src="musikku.mp3" type="audio/mpeg">
+</audio>
+<button id="musicBtn" class="paused" aria-label="Nyalakan musik">
+  <span class="ring"></span>
+  <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  <div class="bars"><span></span><span></span><span></span><span></span></div>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
